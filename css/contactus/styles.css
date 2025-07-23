@@ -1,0 +1,318 @@
+.wrap {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 150px 100px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+}
+
+/* main */
+.main {
+  position: relative;
+  width: 100%;
+  background-color: #f8f8f4;
+}
+.gnb ul li:nth-child(3) a {
+  color: #000;
+  font-weight: 500;
+}
+.main > .inner > span {
+  color: #000;
+  font-family: "Splash", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125px; /* 125% */
+  letter-spacing: 15px;
+}
+.policy-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  align-self: stretch;
+}
+.policy-wrap > p {
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+.policy-wrap .policy {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  align-self: stretch;
+  border: 1px solid #000;
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.8px;
+}
+.policy-wrap .check-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.policy-wrap .check-box input {
+  width: 20px;
+  height: 20px;
+  aspect-ratio: 1/1;
+}
+.policy-wrap .check-box p {
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+.info-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  align-self: stretch;
+}
+.info-wrap .title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
+}
+.info-wrap .title span {
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+  letter-spacing: 1.2px;
+}
+.info-wrap .title .title-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.info-wrap .title .title-text span {
+  color: #f00;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.8px;
+}
+.info-wrap .title .title-text p {
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.8px;
+}
+.info-wrap .info {
+  position: relative;
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.info-wrap .info .info-left,
+.info-wrap .info .info-right {
+  position: relative;
+  flex: 1;
+}
+.info-wrap .info .info-left li,
+.info-wrap .info .info-right li {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-bottom: 1px solid #aaa;
+}
+.info-wrap .info .info-left li:last-child {
+  border-bottom: 0;
+}
+.info-wrap .info .info-left li .info-text,
+.info-wrap .info .info-right li .info-text {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.8px;
+}
+.info-wrap .info .info-left li .info-text p,
+.info-wrap .info .info-right li .info-text p {
+  color: #f00;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.8px;
+}
+.info-wrap .info .info-left li input,
+.info-wrap .info .info-right li input {
+  flex: 3;
+  height: 100%;
+  border: 1px solid #ccc;
+  background-color: #f8f8f4;
+}
+.info-wrap .info .info-right {
+  border-left: 1px solid #aaa;
+}
+.question-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  align-self: stretch;
+}
+.question-wrap .title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
+}
+.question-wrap .title span {
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+  letter-spacing: 1.2px;
+}
+.question-wrap .title .title-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.question-wrap .title .title-text span {
+  color: #f00;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.8px;
+}
+.question-wrap .title .title-text p {
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.8px;
+}
+.question-wrap .question {
+  position: relative;
+  display: flex;
+  padding: 5px 0px 5px 10px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.question-wrap .question li:first-child {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.8px;
+}
+.question-wrap .question li:last-child {
+  position: relative;
+  flex: 3;
+}
+.question-wrap .question li p {
+  color: #f00;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.8px;
+}
+.question-wrap .question li textarea {
+  position: relative;
+  width: 100%;
+  height: 162px;
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center;
+  padding: 20px 10px;
+}
+.question-wrap .btn {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.question-wrap .btn a {
+  display: flex;
+  padding: 5px 10px;
+  align-items: flex-start;
+  background: #000;
+  color: #fff;
+  font-family: "Gmarket Sans TTF";
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+.footer {
+  height: 100%;
+}

@@ -31,13 +31,50 @@ window.addEventListener("load", () => {
     grid.arrange({
       filter: function (itemElem) {
         const span = itemElem.querySelector("div span");
+        const ps = itemElem.querySelectorAll("div p");
+        const spanText = span ? span.textContent.toLowerCase() : "";
+        let pMatch = false;
+        ps.forEach((p) => {
+          if (p.textContent.toLowerCase().includes(keyword)) {
+            pMatch = true;
+          }
+        });
         if (!keyword) return true;
-        return span && span.textContent.toLowerCase().includes(keyword);
+        return spanText.includes(keyword) || pMatch;
       },
     });
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const selectBox = document.querySelector(".search-box .select");
+  const subList = document.querySelector(".search-box .select .sub");
+  const span = selectBox.querySelector("span");
+  const subItems = subList.querySelectorAll("li");
+
+  // select 박스 클릭 시 sub 리스트 표시/숨김
+  selectBox.addEventListener("click", function (e) {
+    e.stopPropagation();
+    subList.style.display =
+      subList.style.display === "block" ? "none" : "block";
+  });
+
+  // sub 리스트 항목 클릭 시 span 내용 변경
+  subItems.forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      e.stopPropagation();
+      span.textContent = item.textContent;
+      subList.style.display = "none";
+    });
+  });
+
+  // 바깥 클릭 시 sub 리스트 닫기
+  document.addEventListener("click", function () {
+    subList.style.display = "none";
+  });
+});
+
+// 링크연결
 document.querySelector("article.haeinjungsa").addEventListener("click", () => {
   window.location.href = "haeinjungsa.html";
 });
