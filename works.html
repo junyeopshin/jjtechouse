@@ -9,56 +9,219 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/index/styleguide.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/works/styles.css" />
     <!-- Script -->
+    <script src="js/works/isotope.pkgd.min.js" defer></script>
+    <script src="js/works/script.js" defer></script>
   </head>
   <body>
-    <div class="main">
-      <div class="section-main">
-        <div class="overlap-group">
-          <div class="header">
-            <div class="div">
-              <a class="text-wrapper" href="/">제이제이테크</a>
+    <div class="wrap">
+      <section class="main">
+        <div class="inner">
+          <header class="header">
+            <div class="logo">
+              <a href="index.html">제이제이테크</a>
             </div>
-            <div class="div">
-              <div class="item">
-                <a class="text-wrapper-2" href="/">제이제이테크</a>
+            <nav class="gnb">
+              <ul>
+                <li><a href="index.html">제이제이테크</a></li>
+                <li><a href="works.html">시공사례</a></li>
+                <li><a href="contactus.html">견적문의</a></li>
+              </ul>
+              <a href="#" class="kakao">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                  >
+                    <path
+                      d="M12 19.5c5.799 0 10.5-3.806 10.5-8.5S17.799 2.5 12 2.5S1.5 6.306 1.5 11c0 2.973 1.885 5.59 4.74 7.108L5.5 22.5l5-3.086q.735.086 1.5.086Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      d="M4.5 9h3M6 13.5V9m2 4.5L9.75 9l1.75 4.5m-3-1H11M13 9v4.5h2M16.5 9v4.5m0-1.5l3-3m-2 2l2 2.5"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </nav>
+          </header>
+          <div class="category-search">
+            <div class="category">
+              <!-- 필터링기능사용하기 -->
+              <ul class="sorting">
+                <li class="on"><a href="*">&CenterDot; 주요 프로젝트</a></li>
+                <li><a href=".eps">EPS 가공</a></li>
+                <li><a href=".dry">외단열 드라이비트</a></li>
+                <li><a href="#">카테고리</a></li>
+                <li><a href="#">카테고리</a></li>
+                <li><a href="#">카테고리</a></li>
+              </ul>
+            </div>
+            <div class="search-box">
+              <div class="select">
+                <span>전체</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M16.3363 6.44624L10.4801 12.21C10.3523 12.3364 10.1798 12.4073 10.0001 12.4073C9.82032 12.4073 9.64783 12.3364 9.52006 12.21L3.66381 6.44749C3.53524 6.32114 3.36219 6.25035 3.18193 6.25035C3.00167 6.25035 2.82863 6.32114 2.70006 6.44749C2.63675 6.50921 2.58643 6.58298 2.55208 6.66445C2.51772 6.74592 2.50002 6.83344 2.50002 6.92186C2.50002 7.01028 2.51772 7.0978 2.55208 7.17927C2.58643 7.26074 2.63675 7.33451 2.70006 7.39624L8.55506 13.1587C8.94071 13.5374 9.45959 13.7495 10.0001 13.7495C10.5405 13.7495 11.0594 13.5374 11.4451 13.1587L17.3001 7.39624C17.3636 7.33449 17.414 7.26065 17.4485 7.17906C17.483 7.09747 17.5007 7.0098 17.5007 6.92124C17.5007 6.83267 17.483 6.745 17.4485 6.66341C17.414 6.58182 17.3636 6.50798 17.3001 6.44624C17.1715 6.31989 16.9984 6.2491 16.8182 6.24909C16.6379 6.2491 16.4649 6.31989 16.3363 6.44624Z"
+                    fill="black"
+                  />
+                </svg>
               </div>
-              <div class="div-wrapper">
-                <a class="text-wrapper-3" href="/works.html">시공사례</a>
-              </div>
-              <div class="div-wrapper">
-                <a class="text-wrapper-3" href="/contactus.html">견적 문의</a>
-              </div>
-              <div class="kakao">
-                <a href="#">
+              <form class="search" action="" method="get">
+                <input
+                  type="text"
+                  name=""
+                  placeholder="검색어를 입력해주세요."
+                />
+                <button class="search-btn" type="submit">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="50"
-                    height="50"
-                    viewBox="0 0 50 50"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
                     fill="none"
                   >
                     <path
-                      d="M25 40.625C37.0812 40.625 46.875 32.6958 46.875 22.9167C46.875 13.1375 37.0812 5.20833 25 5.20833C12.9188 5.20833 3.125 13.1375 3.125 22.9167C3.125 29.1104 7.05208 34.5625 13 37.725L11.4583 46.875L21.875 40.4458C22.8958 40.5653 23.9375 40.625 25 40.625Z"
-                      stroke="black"
-                      stroke-width="2.08333"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M9.375 18.75H15.625M12.5 28.125V18.75M16.6667 28.125L20.3125 18.75L23.9583 28.125M17.7083 26.0417H22.9167M27.0833 18.75V28.125H31.25M34.375 18.75V28.125M34.375 25L40.625 18.75M36.4583 22.9167L40.625 28.125"
-                      stroke="black"
-                      stroke-width="2.08333"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      d="M38.97 40.308L26.446 27.784C25.446 28.636 24.296 29.2953 22.996 29.762C21.696 30.2287 20.3893 30.462 19.076 30.462C15.8733 30.462 13.1626 29.3533 10.944 27.136C8.7253 24.9187 7.61597 22.2087 7.61597 19.006C7.61597 15.8033 8.72397 13.092 10.94 10.872C13.156 8.652 15.8653 7.54067 19.068 7.538C22.2706 7.53533 24.9826 8.64467 27.204 10.866C29.4253 13.0873 30.536 15.7987 30.536 19C30.536 20.3893 30.29 21.734 29.798 23.034C29.306 24.334 28.6593 25.446 27.858 26.37L40.382 38.892L38.97 40.308ZM19.078 28.46C21.7313 28.46 23.9713 27.5467 25.798 25.72C27.6246 23.8933 28.538 21.6527 28.538 18.998C28.538 16.3433 27.6246 14.1033 25.798 12.278C23.9713 10.4527 21.7313 9.53933 19.078 9.538C16.4246 9.53667 14.184 10.45 12.356 12.278C10.528 14.106 9.61463 16.346 9.61597 18.998C9.6173 21.65 10.5306 23.89 12.356 25.718C14.1813 27.546 16.4213 28.4593 19.076 28.458"
+                      fill="black"
                     />
                   </svg>
-                </a>
-              </div>
+                </button>
+              </form>
             </div>
           </div>
+          <section class="works-box">
+            <article class="eps haeinjungsa">
+              <div>
+                <span>해인정사</span>
+                <img
+                  src="assets/images/haeinjungsa-temple-small.png"
+                  alt="haeinjungsa-temple"
+                />
+                <p>부산광역시 사하구 승학로 / 2025. 05. 25<br />Temple</p>
+              </div>
+            </article>
+            <article class="dry">
+              <div>
+                <span>제목</span>
+                <img src="assets/images/item-img-ex.png" alt="ex" />
+                <p>지역 / 날짜<br />간단한 설명</p>
+              </div>
+            </article>
+            <article class="eps">
+              <div>
+                <span>제목</span>
+                <img src="assets/images/item-img-ex.png" alt="ex" />
+                <p>지역 / 날짜<br />간단한 설명</p>
+              </div>
+            </article>
+            <article class="dry">
+              <div>
+                <span>제목</span>
+                <img src="assets/images/item-img-ex.png" alt="ex" />
+                <p>지역 / 날짜<br />간단한 설명</p>
+              </div>
+            </article>
+            <article class="eps">
+              <div>
+                <span>제목</span>
+                <img src="assets/images/item-img-ex.png" alt="ex" />
+                <p>지역 / 날짜<br />간단한 설명</p>
+              </div>
+            </article>
+            <article class="dry">
+              <div>
+                <span>제목</span>
+                <img src="assets/images/item-img-ex.png" alt="ex" />
+                <p>지역 / 날짜<br />간단한 설명</p>
+              </div>
+            </article>
+            <article class="eps">
+              <div>
+                <span>제목</span>
+                <img src="assets/images/item-img-ex.png" alt="ex" />
+                <p>지역 / 날짜<br />간단한 설명</p>
+              </div>
+            </article>
+            <article class="dry">
+              <div>
+                <span>제목</span>
+                <img src="assets/images/item-img-ex.png" alt="ex" />
+                <p>지역 / 날짜<br />간단한 설명</p>
+              </div>
+            </article>
+            <article class="eps">
+              <div>
+                <span>제목</span>
+                <img src="assets/images/item-img-ex.png" alt="ex" />
+                <p>지역 / 날짜<br />간단한 설명</p>
+              </div>
+            </article>
+            <article class="dry">
+              <div>
+                <span>제목</span>
+                <img src="assets/images/item-img-ex.png" alt="ex" />
+                <p>지역 / 날짜<br />간단한 설명</p>
+              </div>
+            </article>
+            <article class="eps">
+              <div>
+                <span>제목</span>
+                <img src="assets/images/item-img-ex.png" alt="ex" />
+                <p>지역 / 날짜<br />간단한 설명</p>
+              </div>
+            </article>
+          </section>
         </div>
-      </div>
+      </section>
+      <section class="footer">
+        <div class="inner">
+          <div class="footer-text">
+            <p>Let's work with us</p>
+            <div class="contact-us">
+              <a href="/contactus.html">
+                <span>
+                  전통을 지키고,<br />
+                  혁신의 기술로 내일을 설계합니다.
+                </span>
+                <img src="assets/images/Arrow.png" alt="화살표" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <div class="text">
+              <p>JJ TECHouse</p>
+              <br />
+              <span>
+                경상남도 창원시 의창구 대산면 유등로 369번길 19 (51122)
+              </span>
+              <br />
+              <span> 010.3132.1573 </span>
+              <br />
+              <p>workql77@naver.com</p>
+            </div>
+            <span>
+              Copyright JJ TECHouse. All rights reserved. DESIGN BY Yeop Studio
+            </span>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>

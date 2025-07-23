@@ -1,0 +1,58 @@
+.header {
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  width: 100vw;
+  height: 50px;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.header .logo {
+  position: relative;
+}
+.header .logo a {
+  color: #000;
+  font-size: 20px;
+  font-family: "GmarketSans-L", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+}
+.gnb {
+  position: relative;
+}
+.gnb ul {
+  position: relative;
+  display: flex;
+}
+.gnb ul li {
+  position: relative;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #666;
+}
+.gnb ul li:first-child {
+  border: 0;
+}
+.gnb ul li a {
+  color: #666;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.gnb ul li:hover a {
+  color: #000;
+  font-weight: 500;
+}
+.gnb a.kakao {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -50px;
+  right: -50px;
+  color: #000;
+}
