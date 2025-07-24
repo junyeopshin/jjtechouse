@@ -1,3 +1,16 @@
+window.addEventListener("load", function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  ScrollTrigger.create({
+    trigger: ".works-container", // 고정시킬 요소
+    start: "top top", // .works-container가 뷰포트 맨 위에 닿을 때 pin 시작
+    end: "bottom+=100% top", // 섹션이 1화면 크기만큼 지나갈 때까지 pin
+    pin: true, // 고정 활성화
+    pinSpacing: true, // 이후 요소들과 겹치지 않음
+    scrub: false, // 스크롤 연동 부드럽게 X, 바로 pin
+  });
+});
+
 // works-container 영역에서만 작동하는 스크롤 효과
 let skewSetter = gsap.quickTo(".works-contents > .item", "skewY"),
   clamp = gsap.utils.clamp(-30, 30);

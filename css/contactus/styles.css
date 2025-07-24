@@ -28,7 +28,7 @@
   color: #000;
   font-weight: 500;
 }
-.main > .inner > span {
+.main > .inner > a > span {
   color: #000;
   font-family: "Splash", sans-serif;
   font-size: 100px;
@@ -152,7 +152,7 @@
 .info-wrap .info .info-right li {
   position: relative;
   width: 100%;
-  height: 40px;
+  height: 48px;
   display: flex;
   padding: 10px;
   align-items: flex-start;
@@ -171,24 +171,21 @@
   gap: 2px;
   color: #000;
   font-family: "Gmarket Sans TTF";
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 20px; /* 125% */
+  line-height: 28px; /* 125% */
   letter-spacing: 0.8px;
 }
 .info-wrap .info .info-left li .info-text p,
 .info-wrap .info .info-right li .info-text p {
   color: #f00;
-  font-family: "Gmarket Sans TTF";
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 20px; /* 125% */
-  letter-spacing: 0.8px;
 }
 .info-wrap .info .info-left li input,
 .info-wrap .info .info-right li input {
   flex: 3;
   height: 100%;
+  font-size: 16px;
+  line-height: 20px;
   border: 1px solid #ccc;
   background-color: #f8f8f4;
 }
@@ -259,10 +256,10 @@
   gap: 2px;
   color: #000;
   font-family: "Gmarket Sans TTF";
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  line-height: 20px; /* 125% */
+  line-height: 28px;
   letter-spacing: 0.8px;
 }
 .question-wrap .question li:last-child {
@@ -271,12 +268,6 @@
 }
 .question-wrap .question li p {
   color: #f00;
-  font-family: "Gmarket Sans TTF";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px; /* 125% */
-  letter-spacing: 0.8px;
 }
 .question-wrap .question li textarea {
   position: relative;
@@ -285,14 +276,14 @@
   color: #000;
   font-family: "Gmarket Sans TTF";
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 20px; /* 125% */
+  line-height: 20px;
   letter-spacing: 0.8px;
   display: flex;
-  align-items: center; /* 세로 중앙 정렬 */
-  justify-content: center;
   padding: 20px 10px;
+}
+.question-wrap .question li textarea::placeholder {
+  color: #aaa;
 }
 .question-wrap .btn {
   position: relative;
@@ -310,8 +301,6 @@
   font-family: "Gmarket Sans TTF";
   font-size: 20px;
   font-weight: 300;
-  letter-spacing: 1.2px;
-  text-align: center;
 }
 .footer {
   height: 100%;
