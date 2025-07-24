@@ -11,12 +11,26 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/index/styles.css" />
-    <!-- Script -->
-    <script src="js/index/script.js"></script>
+    <link rel="stylesheet" href="css/works-gsap.css" />
+
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <!-- ScrollSmoother requires ScrollTrigger -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"
+      defer
+    ></script>
+
+    <!-- Script -->
+    <script src="js/index/worksGsap.js" defer></script>
+    <script src="js/index/script.js" defer></script>
   </head>
   <body>
     <div class="wrap">
@@ -256,7 +270,66 @@
           </div>
         </div>
       </section>
-      <section class="works"></section>
+      <section class="works-container">
+        <span
+          >Our<br />
+          Works</span
+        >
+        <div class="works-inner">
+          <div class="works-wrap">
+            <div class="works-contents">
+              <div class="item">
+                <p>해인정사</p>
+                <img
+                  data-speed="0.8"
+                  src="assets/images/haeinjungsa-temple-small.png"
+                  alt=""
+                />
+              </div>
+              <div class="item">
+                <p>예시 사진입니다.</p>
+                <img
+                  data-speed="0.8"
+                  src="assets/images/item-img-ex.png"
+                  alt=""
+                />
+              </div>
+              <div class="item">
+                <p>예시 사진입니다.</p>
+                <img
+                  data-speed="0.8"
+                  src="assets/images/item-img-ex.png"
+                  alt=""
+                />
+              </div>
+              <div class="item">
+                <p>예시 사진입니다.</p>
+                <img
+                  data-speed="0.8"
+                  src="assets/images/item-img-ex.png"
+                  alt=""
+                />
+              </div>
+              <div class="item">
+                <p>예시 사진입니다.</p>
+                <img
+                  data-speed="0.8"
+                  src="assets/images/item-img-ex.png"
+                  alt=""
+                />
+              </div>
+              <div class="item">
+                <p>예시 사진입니다.</p>
+                <img
+                  data-speed="0.8"
+                  src="assets/images/item-img-ex.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="footer">
         <div class="inner">
           <div class="footer-text">

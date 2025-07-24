@@ -5,27 +5,34 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
+html {
+  height: auto;
+  min-height: 100%;
+}
 body {
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
   font-family: "GmarketSans-L", sans-serif;
-  font-weight: 300;
   font-size: 10px;
-  color: #000;
+  font-weight: 300;
   line-height: 1.5;
+  color: #000;
   letter-spacing: -0.23px;
   text-size-adjust: 100%;
-  overflow-x: hidden;
-  background-color: #fff;
-  height: 100%;
+  overscroll-behavior: none;
 }
+
 ul,
 li {
   list-style: none;
 }
 a {
   display: block;
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
 }
 img {
   border: 0;
