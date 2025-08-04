@@ -24,7 +24,6 @@
   margin: 0;
   padding: 0;
   overscroll-behavior: none;
-  max-width: 1600px;
   height: 100%;
   overflow-y: auto;
 }
