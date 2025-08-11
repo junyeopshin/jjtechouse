@@ -78,3 +78,15 @@ document.addEventListener("DOMContentLoaded", function () {
 document.querySelector("article.haeinjungsa").addEventListener("click", () => {
   window.location.href = "haeinjungsa.html";
 });
+document.querySelector("article.masan").addEventListener("click", () => {
+  window.location.href = "masan.html";
+});
+document.querySelector("article.gosung").addEventListener("click", () => {
+  window.location.href = "gosung.html";
+});
+document.querySelector("article.haeundae").addEventListener("click", () => {
+  window.location.href = "haeundae.html";
+});
+document.querySelector("article.changwon").addEventListener("click", () => {
+  window.location.href = "changwon.html";
+});

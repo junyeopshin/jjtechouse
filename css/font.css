@@ -27,8 +27,10 @@
   src: url("../fonts/CormorantGaramond-BoldItalic.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Soak Up The Sun Script";
-  src: url("../fonts/SoakUpTheSunScript.otf") format("otf");
+  font-family: "SoakUpTheSunScript";
+  src: url("../fonts/SoakUpTheSunScript.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Splash";

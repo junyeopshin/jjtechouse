@@ -14,7 +14,7 @@
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
-  font-family: "Soak Up The Sun Script", sans-serif;
+  font-family: "SoakUpTheSunScript", cursive;
   font-size: 500px;
   font-weight: 400;
   line-height: 300px; /* 60% */
@@ -77,6 +77,7 @@
 .works-contents img {
   width: 100%;
   height: 100%;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   transition: transform 0.1s ease-out;
 }
