@@ -119,3 +119,21 @@
 .works-container::-webkit-scrollbar-thumb:hover {
   background: #222;
 }
+/* 모바일 (480px 이하) */
+@media (max-width: 480px) {
+  .works-container span {
+    font-size: 320px;
+    line-height: 200px; /* 60% */
+  }
+
+  .works-contents .item p {
+    font-size: 20px;
+    line-height: 38px;
+  }
+
+  .works-contents {
+    max-width: 480px;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+}

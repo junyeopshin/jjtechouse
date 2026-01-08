@@ -311,3 +311,59 @@
 .footer {
   height: 100%;
 }
+/* 모바일 (480px 이하) */
+@media (max-width: 480px) {
+  .inner {
+    padding: 126px 24px 0;
+    gap: 56px;
+  }
+
+  .main > .inner > a > span {
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0px;
+  }
+
+  .policy-wrap > p {
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0px;
+  }
+
+  .policy-wrap .policy {
+    padding: 20px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+  }
+
+  .info-wrap .title span {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0px;
+  }
+
+  .info-wrap .info .info-left li .info-text,
+  .info-wrap .info .info-right li .info-text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+  }
+
+  .question-wrap .title span {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0px;
+  }
+
+  .question-wrap .btn a {
+    display: flex;
+    padding: 5px 10px;
+    align-items: flex-start;
+    background: #000;
+    color: #fff;
+    font-family: "Gmarket Sans TTF";
+    font-size: 20px;
+    font-weight: 300;
+  }
+}

@@ -211,3 +211,94 @@
   font-weight: 300;
   line-height: 20px;
 }
+/* 모바일 (480px 이하) */
+@media (max-width: 480px) {
+  .inner {
+    padding: 126px 24px 0;
+    gap: 56px;
+  }
+
+  .category-search {
+    gap: 12px;
+    max-width: 360px;
+  }
+
+  .category .sorting {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .category .sorting li a {
+    color: #666;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  .category .sorting li:first-child {
+    padding: 0;
+    border: 0;
+  }
+
+  .category .sorting li {
+    display: flex;
+    padding: 0 0 0 12px;
+    align-items: center;
+    border-left: 1px solid #666;
+  }
+
+  .category .sorting li.on a {
+    color: #000;
+    font-weight: bold;
+  }
+
+  .search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .search-box .select {
+    width: 25%;
+    height: 48px;
+    padding: 0;
+  }
+
+  .search-box .search {
+    padding: 0;
+    justify-content: space-between;
+    width: 72%;
+  }
+
+  .search-box .search input {
+    width: 70%;
+  }
+
+  .search-box .search .search-btn {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: #f8f8f4;
+    border: 0;
+  }
+
+  .works-box {
+    gap: 70px;
+  }
+
+  .works-box > article {
+    width: 100%;
+    padding: 0px;
+    gap: 70px;
+  }
+
+  .works-box > article > div {
+    gap: 16px;
+  }
+
+  .works-box > article > div > p {
+    line-height: 24px;
+    margin-bottom: 70px;
+  }
+}

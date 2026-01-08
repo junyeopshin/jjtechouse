@@ -86,3 +86,71 @@
   font-style: italic;
   font-weight: 400;
 }
+/* 모바일 반응형 (768px 이하) */
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .footer {
+    height: auto;
+  }
+
+  .footer .inner {
+    padding: 56px 24px;
+    height: auto;
+    gap: 56px;
+  }
+
+  .footer-text {
+    gap: 24px;
+    height: auto;
+    align-items: baseline;
+  }
+
+  .footer-text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .footer-text .contact-us {
+    height: auto;
+  }
+
+  .footer-text .contact-us a {
+    height: auto;
+  }
+
+  .footer-text .contact-us a span {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .footer-text .contact-us a img {
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  }
+
+  .footer-info {
+    display: block;
+  }
+
+  .footer-info .text {
+    display: block;
+  }
+
+  .footer-info .text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footer-info .text span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .footer-info span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

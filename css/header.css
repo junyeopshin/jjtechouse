@@ -56,3 +56,34 @@
   right: -50px;
   color: #000;
 }
+/* 모바일 반응형 (768px 이하) */
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 56px;
+    padding: 0 24px;
+  }
+
+  .gnb {
+    display: none;
+  }
+
+  .gnb-desktop {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .header {
+    padding: 0 32px;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+}
